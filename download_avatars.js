@@ -45,10 +45,8 @@ getRepoContributors(owner, repo, function(err, result) {
   }
 });
 
-
-//function to download image
 function downloadImageByURL(url, filePath) {
-  //console.log("Downloading Image...")
+
   request.get(url)
          .on('error', function (err){
           throw err;
